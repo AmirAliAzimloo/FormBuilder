@@ -41,10 +41,10 @@ jobs:
           configFile: commitlint.config.cjs
 
       - name: Build Next.js Application
-        run: npm run build
+        run: npx nx run formBuilder:build
 
       - name: Start Application
-        run: npm start &
+        run: npx nx run formBuilder:start &
         env:
           NODE_ENV: production
 
