@@ -53,4 +53,5 @@ jobs:
 
       - name: Run tests
         run: npx nx affected -t lint test build
+      - run : npx nx run formBuilder-e2e:open-cypress
       - run: npx nx affected --parallel 1 -t e2e-ci
