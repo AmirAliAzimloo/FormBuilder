@@ -13,10 +13,9 @@ permissions:
 jobs:
   # CI
   build-and-test:
-    runs-on: ubuntu-latest
-
+  runs-on: ubuntu-latest
   steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
       fetch-depth: 0 # Fetch all history for all branches and tags
 
