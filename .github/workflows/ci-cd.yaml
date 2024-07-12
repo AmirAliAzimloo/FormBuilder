@@ -56,9 +56,9 @@ jobs:
       - run: npx nx affected --parallel 1 -t e2e-ci
 
       - name: Build Docker Image
-        run: docker build -t formbuilder:1.0 .
+        run: docker-compose build
 
       - name: Push Docker Image to Registry
         run: |
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push formbuilder:1.0
+          docker-compose push
