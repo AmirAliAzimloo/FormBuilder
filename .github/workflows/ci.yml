@@ -56,6 +56,5 @@ jobs:
 
       - name: Wait for server to be ready
         run: npx wait-on http://localhost:3000
-
-      - name: Run E2E tests
+        
       - run: npx nx affected --parallel 1 -t e2e-ci
