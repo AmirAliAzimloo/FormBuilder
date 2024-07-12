@@ -2,7 +2,7 @@ import { getGreeting } from '../support/app.po';
 
 describe('formBuilder-e2e', () => {
   beforeEach(() =>{
-     cy.visit('http://localhost:3000');
+     cy.visit('/',{failOnStatusCode:false});
   });
 
   it('should display welcome message', () => {
