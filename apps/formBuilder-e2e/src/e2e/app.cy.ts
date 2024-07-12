@@ -2,7 +2,6 @@ import { getGreeting } from '../support/app.po';
 
 describe('formBuilder-e2e', () => {
   beforeEach(() =>{
-     cy.wait(5000);
      cy.visit('http://localhost:3000');
   });
 
