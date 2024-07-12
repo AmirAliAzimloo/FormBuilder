@@ -1,37 +1,63 @@
-name: CI
+name: Continuous Integration
 
 on:
   push:
     branches:
       - main
   pull_request:
+    branches:
+      - main
 
 permissions:
   actions: read
   contents: read
 
 jobs:
-  main:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          fetch-depth: 0
+          node-version: '14'  # Set Node.js version according to your project's requirements
 
-      # Connect your workspace on nx.app and uncomment this to enable task distribution.
-      # The "--stop-agents-after" is optional, but allows idle agents to shut down once the "e2e-ci" targets have been requested
-      # - run: npx nx-cloud start-ci-run --distribute-on="5 linux-medium-js" --stop-agents-after="e2e-ci"
+      - name: Install Dependencies
+        run: npm ci
 
-      # Cache node_modules
-      - uses: actions/setup-node@v3
+      - name: Run Linting
+        run: npm run lint
+
+      - name: Run Format Check
+        run: npm run format
+
+      - name: Check Commit Messages
+        uses: wagoid/commitlint-github-action@v3
         with:
-          node-version: 20
-          # cache: 'npm'
+          configFile: commitlint.config.cjs
 
-      - run: npm ci
-      - uses: nrwl/nx-set-shas@v4
-      
-      # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
-      # - run: npx nx-cloud record -- echo Hello World
-      - run: npx nx affected -t lint test build
-      - run: npx nx affected --parallel 1 -t e2e-ci
+      - name: Build Next.js Application
+        run: npm run build
+
+      - name: Start Application
+        run: npm start &
+        env:
+          NODE_ENV: production
+
+      - name: Wait for Application to be Ready
+        run: |
+          echo "Waiting for the application to be ready..."
+          n=0
+          until [ $n -ge 30 ]
+          do
+            curl -s http://localhost:3000/ && break
+            n=$((n+1))
+            sleep 2
+          done
+
+      - name: Run Cypress Tests
+        run: |
+          export CYPRESS_baseUrl=http://localhost:3000
+          npx nx affected --parallel 1 -t e2e-ci
