@@ -53,7 +53,4 @@ jobs:
 
       - name: Run tests
         run: npx nx affected -t lint test build
-      - run: |
-          npx nx run formBuilder:build
-          npx nx run formBuilder:start --port 4000 
-          npx nx affected --parallel 1 -t e2e-ci
+      - run: npx nx affected --parallel 1 -t e2e-ci
