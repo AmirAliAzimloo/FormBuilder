@@ -1,4 +1,4 @@
-import { getGreeting } from '../support/app.po';
+import { getShadcnButton } from '../support/app.po';
 
 describe('formBuilder-e2e', () => {
   beforeEach(() => cy.visit('/'));
@@ -8,6 +8,6 @@ describe('formBuilder-e2e', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains(/Welcome/);
+    getShadcnButton().contains(/Shadcn Button/);
   });
 });

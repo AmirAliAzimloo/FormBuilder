@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@form-builder/ui-components": ["libs/ui-components/src/index.ts"],
+        "@form-builder/ui-components/*": ["libs/ui-components/src/*"]
+      }
+    }
+}
