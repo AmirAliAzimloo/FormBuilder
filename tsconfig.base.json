@@ -15,6 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@form-builder/providers": ["libs/providers/src/index.ts"],
+      "@form-builder/providers/server": ["libs/providers/src/server.ts"],
       "@form-builder/ui-components": ["libs/ui-components/src/index.ts"]
     }
   },
