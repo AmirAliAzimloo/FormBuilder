@@ -1,9 +1,9 @@
 import {
   ClerkProvider,
 } from '@clerk/nextjs'
-import { ThemeProvider } from 'next-themes';
 
 import './global.css';
+import { ThemeProvider } from '@form-builder/providers';
 
 export const metadata = {
   title: 'FormBuilder',
