@@ -26,6 +26,14 @@ jobs:
         with:
           node-version: '20.14.0'  # Set Node.js version according to your project's requirements
 
+      - name: Copy .env file for main branch
+        if: github.ref == 'refs/heads/main'
+        run: cp .env.prod .env
+
+      - name: Copy .env file for other branches
+        if: github.ref != 'refs/heads/main'
+        run: cp .env.dev .env
+
       - name: Install Dependencies
         run: npm ci
 
