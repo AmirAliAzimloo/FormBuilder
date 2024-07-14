@@ -48,9 +48,6 @@ jobs:
         with:
           configFile: commitlint.config.cjs
 
-      - name: Clear NX Cache
-        run: npx nx reset
-
       - name: Build Next.js Application
         run: npx nx run formBuilder:build
 
