@@ -18,8 +18,20 @@ import { Separator } from "@form-builder/ui-components";
 import { Skeleton } from "@form-builder/ui-components";
 import { CreateFormBtn } from "@form-builder/shared";
 import { StatsCard } from "./forms/[id]/_components/StatsCard";
+import { cookies } from "next/headers";
 
-export default function Home() {
+async function getCookieData() {
+  const cookieData = cookies().getAll()
+  return new Promise((resolve) =>
+    setTimeout(() => {
+      resolve(cookieData)
+    }, 1000)
+  )
+}
+
+export default async function Home() {
+  const cookieData = await getCookieData()
+
   return (
     <div className="container pt-4">
       <Suspense fallback={<StatsCards loading={true} />}>

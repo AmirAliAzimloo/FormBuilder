@@ -1,6 +1,6 @@
 "use client";
 
-import { Dispatch, ReactNode, SetStateAction, createContext, useState } from "react";
+import { Dispatch, ReactNode, SetStateAction, createContext, useEffect, useState } from "react";
 import { FormElementInstance } from '@form-builder/shared';
 
 type DesignerContextType = {
@@ -18,8 +18,17 @@ type DesignerContextType = {
 export const DesignerContext = createContext<DesignerContextType | null>(null);
 
 export function DesignerContextProvider({ children }: { children: ReactNode }) {
+  const [mounted,setMounted] = useState(false);
   const [elements, setElements] = useState<FormElementInstance[]>([]);
   const [selectedElement, setSelectedElement] = useState<FormElementInstance | null>(null);
+
+  useEffect(()=>{
+    setMounted(true)
+  },[])
+  
+  if(!mounted)return null;
+
+
 
   const addElement = (index: number, element: FormElementInstance) => {
     setElements((prev) => {
