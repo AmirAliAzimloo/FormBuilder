@@ -46,3 +46,6 @@ Thumbs.db
 out
 
 # ENV
+.env
+.env.dev
+.env.prod
