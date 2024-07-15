@@ -34,12 +34,6 @@ jobs:
         if: github.ref != 'refs/heads/main'
         run: echo "${{ secrets.ENV_DEV }}" > .env
 
-      - name: Add POSTGRES_PRISMA_URL to .env
-        run: echo "POSTGRES_PRISMA_URL=${{ secrets.POSTGRES_PRISMA_URL }}" >> .env
-
-      - name: Add POSTGRES_URL_NON_POOLING to .env
-        run: echo "POSTGRES_PRISMA_URL=${{ secrets.POSTGRES_URL_NON_POOLING }}" >> .env
-
       - name: Install Dependencies
         run: npm ci
 
@@ -59,6 +53,9 @@ jobs:
 
       - name: Generate Prisma Client
         run: npm run prisma:migrate-dev
+        env:
+            POSTGRES_PRISMA_URL: ${{ secrets.POSTGRES_PRISMA_URL }}
+            POSTGRES_URL_NON_POOLING: ${{ secrets.POSTGRES_URL_NON_POOLING }}
 
       - name: Apply Prisma Migrations
         run: npx prisma migrate dev --schema=libs/database/prisma/schema.prisma
