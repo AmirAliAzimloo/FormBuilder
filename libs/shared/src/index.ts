@@ -10,3 +10,4 @@ export * from './components/SaveFormBtn';
 export * from './components/PublishFormBtn';
 export * from './components/VisitBtn';
 export * from './components/FormLinkShare';
+export * from './components/FormSubmitComponent';

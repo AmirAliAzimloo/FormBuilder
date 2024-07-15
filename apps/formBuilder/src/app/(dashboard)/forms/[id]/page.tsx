@@ -2,7 +2,7 @@ import { GetFormById, GetFormWithSubmissions } from "apps/formBuilder/actions/fo
 import {FormLinkShare} from "@form-builder/shared";
 import {VisitBtn} from "@form-builder/shared";
 import React, { ReactNode } from "react";
-import { StatsCard } from "../../page";
+import { StatsCard } from "./_components/StatsCard";
 import { LuView } from "react-icons/lu";
 import { FaWpforms } from "react-icons/fa";
 import { HiCursorClick } from "react-icons/hi";

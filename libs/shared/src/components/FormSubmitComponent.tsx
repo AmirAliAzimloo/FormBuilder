@@ -8,7 +8,7 @@ import { toast } from "@form-builder/ui-components";
 import { ImSpinner2 } from "react-icons/im";
 import { SubmitForm } from "apps/formBuilder/actions/form";
 
-function FormSubmitComponent({ formUrl, content }: { content: FormElementInstance[]; formUrl: string }) {
+export function FormSubmitComponent({ formUrl, content }: { content: FormElementInstance[]; formUrl: string }) {
   const formValues = useRef<{ [key: string]: string }>({});
   const formErrors = useRef<{ [key: string]: boolean }>({});
   const [renderKey, setRenderKey] = useState(new Date().getTime());
@@ -111,5 +111,3 @@ function FormSubmitComponent({ formUrl, content }: { content: FormElementInstanc
     </div>
   );
 }
-
-export default FormSubmitComponent;
