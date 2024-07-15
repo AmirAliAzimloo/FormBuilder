@@ -22,7 +22,7 @@ import { CreateForm } from "apps/formBuilder/actions/form";
 import { BsFileEarmarkPlus } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 
-function CreateFormBtn() {
+export function CreateFormBtn() {
   const router = useRouter();
   const form = useForm<formSchemaType>({
     resolver: zodResolver(formSchema),
@@ -101,5 +101,3 @@ function CreateFormBtn() {
     </Dialog>
   );
 }
-
-export default CreateFormBtn;

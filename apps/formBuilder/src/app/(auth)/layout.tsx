@@ -1,5 +1,4 @@
-import Logo from "libs/shared/src/components/Logo";
-import ThemeSwitcher from "libs/shared/src/components/ThemeSwitcher";
+import { Logo, ThemeSwitcher } from "@form-builder/shared";
 import React, { ReactNode } from "react";
 
 function Layout({ children }: { children: ReactNode }) {

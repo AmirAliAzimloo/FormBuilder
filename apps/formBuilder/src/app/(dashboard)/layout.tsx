@@ -1,7 +1,7 @@
-import { UserButton } from "@clerk/nextjs";
-import Logo from "libs/shared/src/components/Logo";
-import ThemeSwitcher from "libs/shared/src/components/ThemeSwitcher";
 import React, { ReactNode } from "react";
+
+import { UserButton } from "@clerk/nextjs";
+import { Logo, ThemeSwitcher } from "@form-builder/shared";
 
 function Layout({ children }: { children: ReactNode }) {
   return (

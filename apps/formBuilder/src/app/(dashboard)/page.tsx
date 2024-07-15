@@ -9,7 +9,6 @@ import { HiCursorClick } from "react-icons/hi";
 import { TbArrowBounce } from "react-icons/tb";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { FaEdit } from "react-icons/fa";
-import CreateFormBtn from "libs/shared/src/components/CreateFormBtn";
 import { Form } from "@prisma/client";
 import { Badge } from "@form-builder/ui-components";
 import { formatDistance } from "date-fns";
@@ -17,6 +16,7 @@ import { Button } from "@form-builder/ui-components";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@form-builder/ui-components";
 import { Separator } from "@form-builder/ui-components";
 import { Skeleton } from "@form-builder/ui-components";
+import { CreateFormBtn } from "@form-builder/shared";
 
 export default function Home() {
   return (

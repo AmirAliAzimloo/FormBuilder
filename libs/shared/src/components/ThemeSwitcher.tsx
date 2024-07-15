@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { DesktopIcon, MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { Tabs, TabsList, TabsTrigger } from "@form-builder/ui-components";
 
-function ThemeSwitcher() {
+export function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -30,5 +30,3 @@ function ThemeSwitcher() {
     </Tabs>
   );
 }
-
-export default ThemeSwitcher;
