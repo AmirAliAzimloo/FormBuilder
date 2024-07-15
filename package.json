@@ -6,7 +6,8 @@
     "lint": "npx nx run formBuilder:lint",
     "lint:fix": "npx nx run formBuilder:lint --fix",
     "format": "npx nx format:write",
-    "prisma:migrate-dev": "cd libs/database && npx prisma migrate dev --schema=prisma/schema.prisma && cd ../../"
+    "prisma:migrate-dev": "cd libs/database && npx prisma migrate dev --schema=prisma/schema.prisma && cd ../../",
+    "postinstall": "prisma generate"
   },
   "private": true,
   "dependencies": {
