@@ -4,6 +4,7 @@ import {
 
 import './global.css';
 import { ThemeProvider } from '@form-builder/providers';
+import {DesignerContextProvider} from '@form-builder/contexts';
 
 export const metadata = {
   title: 'FormBuilder',
@@ -19,9 +20,11 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
       <body>
+      <DesignerContextProvider>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
         {children}
       </ThemeProvider>
+      </DesignerContextProvider>
       </body>
       </html>
     </ClerkProvider>

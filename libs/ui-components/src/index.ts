@@ -45,3 +45,4 @@ export * from "./components/ui/use-toast";
 export * from "./components/ui/toggle";
 export * from "./components/ui/toggle-group";
 export * from "./components/ui/tooltip";
+export * from './utils'

@@ -17,7 +17,7 @@ type DesignerContextType = {
 
 export const DesignerContext = createContext<DesignerContextType | null>(null);
 
-export default function DesignerContextProvider({ children }: { children: ReactNode }) {
+export function DesignerContextProvider({ children }: { children: ReactNode }) {
   const [elements, setElements] = useState<FormElementInstance[]>([]);
   const [selectedElement, setSelectedElement] = useState<FormElementInstance | null>(null);
 
