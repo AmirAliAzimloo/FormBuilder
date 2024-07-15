@@ -26,9 +26,6 @@ jobs:
         with:
           node-version: '20.14.0'  # Set Node.js version according to your project's requirements
 
-      - name: Create .env file for prisma
-        run: echo "${{ secrets.ENV_PROD }}" > libs/database/.env
-
       - name: Create .env file for main branch
         if: github.ref == 'refs/heads/main'
         run: echo "${{ secrets.ENV_PROD }}" > .env
