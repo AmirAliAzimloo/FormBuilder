@@ -15,7 +15,7 @@ import Link from "next/link";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import {SaveFormBtn} from "./SaveFormBtn";
 import { PublishFormBtn } from "./PublishFormBtn";
-// import Confetti from "react-confetti";
+import Confetti from "react-confetti";
 
 export function FormBuilder({ form }: { form: Form }) {
   const { setElements, setSelectedElement } = useDesigner();
@@ -58,7 +58,7 @@ export function FormBuilder({ form }: { form: Form }) {
   if (form.published) {
     return (
       <>
-        {/* <Confetti width={window.innerWidth} height={window.innerHeight} recycle={false} numberOfPieces={1000} /> */}
+        <Confetti width={window.innerWidth} height={window.innerHeight} recycle={false} numberOfPieces={1000} />
         <div className="flex flex-col items-center justify-center h-full w-full">
           <div className="max-w-md">
             <h1 className="text-center text-4xl font-bold text-primary border-b pb-2 mb-10">

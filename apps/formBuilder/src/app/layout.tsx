@@ -5,6 +5,7 @@ import {
 import './global.css';
 import { ThemeProvider } from '@form-builder/providers';
 import {DesignerContextProvider} from '@form-builder/contexts';
+import NextTopLoader from "nextjs-toploader";
 
 export const metadata = {
   title: 'FormBuilder',
@@ -20,6 +21,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
       <body>
+      <NextTopLoader />
       <DesignerContextProvider>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
         {children}
