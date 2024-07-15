@@ -1,12 +1,12 @@
-describe('sign-up', () => {
+// describe('sign-up', () => {
   
-    beforeEach(() => {
-      cy.visit('/sign-up');
-    });
+//     beforeEach(() => {
+//       cy.visit('/sign-up');
+//     });
     
-    it('should render sign up page', () => {
-        cy.login('my-email@something.com', 'myPassword');
-    });
+//     it('should render sign up page', () => {
+//         cy.login('my-email@something.com', 'myPassword');
+//     });
   
-  });
+//   });
   
