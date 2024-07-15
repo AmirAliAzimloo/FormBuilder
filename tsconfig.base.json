@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@form-builder/contexts": ["libs/contexts/src/index.ts"],
       "@form-builder/database": ["libs/database/src/index.ts"],
       "@form-builder/providers": ["libs/providers/src/index.ts"],
       "@form-builder/schemas": ["libs/schemas/src/index.ts"],
