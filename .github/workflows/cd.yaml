@@ -1,12 +1,10 @@
 name: Continuous Deployment
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["Continuous Integration"]
+    types:
+      - completed
 
 permissions:
   actions: read
@@ -15,7 +13,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    # if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
       - name: Checkout code
@@ -23,9 +21,6 @@ jobs:
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
-
-      # - name: Create .env file
-      #   run: touch .env
 
       - name: Create .env file for main branch
         if: github.ref == 'refs/heads/main'
@@ -42,7 +37,7 @@ jobs:
       #     password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker-compose -f docker-compose.yml build
+        run: docker-compose -f docker-compose-deploy.yml build
         env:
           POSTGRES_PRISMA_URL: ${{ secrets.POSTGRES_PRISMA_URL }}
           POSTGRES_URL_NON_POOLING: ${{ secrets.POSTGRES_URL_NON_POOLING }}
