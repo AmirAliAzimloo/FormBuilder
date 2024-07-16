@@ -23,11 +23,11 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Copy .env file for main branch
-        if: github.head_ref == 'main'
+        if: ${{ github.ref == 'refs/heads/main' }}
         run: cp .env.prod .env
 
       - name: Copy .env file for other branches
-        if: github.head_ref != 'main'
+        if: ${{ github.ref != 'refs/heads/main' }}
         run: cp .env.dev .env
 
       # - name: Log in to Docker Hub
@@ -40,5 +40,4 @@ jobs:
         run: docker-compose -f docker-compose.yml build
 
       # - name: Push Docker Image to Registry
-      #   run: |
-      #     docker-compose -f docker-compose.yml push
+      #   run: docker-compose -f docker-compose.yml push
