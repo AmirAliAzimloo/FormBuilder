@@ -15,7 +15,6 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    # if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
       - name: Checkout code
@@ -24,13 +23,31 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
-      - name: Create .env file for main branch
+      - name: Create .env.prod file for main branch
         if: github.ref == 'refs/heads/main'
         run: echo "${{ secrets.ENV_PROD }}" > .env.prod
 
-      - name: Create .env file for other branches
+      - name: Create .env.dev file for other branches
         if: github.ref != 'refs/heads/main'
         run: echo "${{ secrets.ENV_DEV }}" > .env.dev
+
+      - name: Ensure environment files exist
+        run: |
+          if [ "${GITHUB_REF}" == "refs/heads/main" ]; then
+            if [ ! -f .env.prod ]; then
+              echo "Environment file .env.prod does not exist!"
+              exit 1
+            else
+              echo ".env.prod file created successfully."
+            fi
+          else
+            if [ ! -f .env.dev ]; then
+              echo "Environment file .env.dev does not exist!"
+              exit 1
+            else
+              echo ".env.dev file created successfully."
+            fi
+          fi
 
       # - name: Log in to Docker Hub
       #   uses: docker/login-action@v1
@@ -38,18 +55,18 @@ jobs:
       #     username: ${{ secrets.DOCKER_USERNAME }}
       #     password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build Docker Image
-        run: |
-          if [ "${GITHUB_REF}" == "refs/heads/main" ]; then
-            docker-compose --env-file .env.prod -f docker-compose.yml build
-          else
-            docker-compose --env-file .env.dev -f docker-compose.yml build
-          fi
+      - name: Build Docker Image for main branch
+        if: github.ref == 'refs/heads/main'
+        run: docker-compose -f docker-compose.yml build client-prod
+
+      - name: Build Docker Image for other branches
+        if: github.ref != 'refs/heads/main'
+        run: docker-compose -f docker-compose.yml build client-dev
 
       # - name: Push Docker Image to Registry
       #   run: |
       #     if [ "${GITHUB_REF}" == "refs/heads/main" ]; then
-      #       docker-compose --env-file .env.prod -f docker-compose.yml push
+      #       docker-compose -f docker-compose.yml push client-prod
       #     else
-      #       docker-compose --env-file .env.dev -f docker-compose.yml push
+      #       docker-compose -f docker-compose.yml push client-dev
       #     fi
