@@ -24,11 +24,11 @@ jobs:
 
       - name: Create .env file for main branch
         if: github.ref == 'refs/heads/main'
-        run: echo "${{ secrets.ENV_PROD }}" > .env
+        run: echo "${{ secrets.ENV_PROD }}" > .env.prod
 
       - name: Create .env file for other branches
         if: github.ref != 'refs/heads/main'
-        run: echo "${{ secrets.ENV_DEV }}" > .env
+        run: echo "${{ secrets.ENV_DEV }}" > .env.dev
 
       # - name: Log in to Docker Hub
       #   uses: docker/login-action@v1
