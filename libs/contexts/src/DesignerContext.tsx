@@ -2,6 +2,7 @@
 
 import { Dispatch, ReactNode, SetStateAction, createContext, useEffect, useState } from "react";
 import { FormElementInstance } from '@form-builder/shared';
+import { useSearchParams } from "next/navigation";
 
 type DesignerContextType = {
   elements: FormElementInstance[];
@@ -21,6 +22,16 @@ export function DesignerContextProvider({ children }: { children: ReactNode }) {
   const [mounted,setMounted] = useState(false);
   const [elements, setElements] = useState<FormElementInstance[]>([]);
   const [selectedElement, setSelectedElement] = useState<FormElementInstance | null>(null);
+
+  const searchParams = useSearchParams();
+  const GAID = searchParams.get('gaid');
+
+  useEffect(()=>{
+    if(GAID){
+      alert('GAID')
+      alert(GAID)
+    }
+  },[GAID])
 
   useEffect(()=>{
     setMounted(true)
