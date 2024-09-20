@@ -1,0 +1,13 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.vercel.form_builder_sigma_five.twa",
+        "sha256_cert_fingerprints": [
+          "6B:82:71:19:F4:7E:B7:1D:36:FB:42:16:79:91:81:EE:38:BE:95:DC",
+          "02:34:60:01:AB:51:E4:76:B8:08:82:B1:CC:50:F2:80:39:CB:14:3D:BB:C0:41:92:72:3B:76:E9:4F:83:A0:CD"
+        ]
+      }
+    }
+  ]
