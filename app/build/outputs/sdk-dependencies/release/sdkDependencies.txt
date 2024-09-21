@@ -446,6 +446,18 @@ library {
   repo_index {
   }
 }
+library {
+  maven_library {
+    groupId: "androidx.webkit"
+    artifactId: "webkit"
+    version: "1.4.0"
+  }
+  digests {
+    sha256: "\032\021\262\n\254\023R\336r\332Sf\267f\202\316\213\246\271\260\276\361jv\273=\364\032\235\270\221\227"
+  }
+  repo_index {
+  }
+}
 library_dependencies {
   library_dep_index: 1
   library_dep_index: 32
@@ -649,11 +661,17 @@ library_dependencies {
   library_index: 36
   library_dep_index: 30
 }
+library_dependencies {
+  library_index: 37
+  library_dep_index: 4
+  library_dep_index: 5
+}
 module_dependencies {
   module_name: "base"
   dependency_index: 0
   dependency_index: 35
   dependency_index: 36
+  dependency_index: 37
 }
 repositories {
   maven_repo {

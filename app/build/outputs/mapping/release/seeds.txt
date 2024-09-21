@@ -1,105 +1,223 @@
-androidx.lifecycle.FullLifecycleObserverAdapter
-com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity
+androidx.core.app.RemoteActionCompatParcelizer
+org.chromium.support_lib_boundary.WebMessagePortBoundaryInterface
+com.google.android.gms.location.LocationRequest
+org.chromium.support_lib_boundary.ServiceWorkerWebSettingsBoundaryInterface
+org.chromium.support_lib_boundary.WebMessageBoundaryInterface
+com.google.android.gms.common.util.DynamiteApi
+org.chromium.support_lib_boundary.ServiceWorkerClientBoundaryInterface
+com.google.android.gms.location.LocationResult
+app.vercel.form_builder_sigma_five.twa.Application
+org.chromium.support_lib_boundary.SafeBrowsingResponseBoundaryInterface
+com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader
+org.chromium.support_lib_boundary.WebMessageCallbackBoundaryInterface
+app.vercel.form_builder_sigma_five.twa.LauncherActivity
+org.chromium.support_lib_boundary.WebViewClientBoundaryInterface
+com.google.android.gms.common.GooglePlayServicesMissingManifestValueException
+androidx.lifecycle.CompositeGeneratedAdaptersObserver
+androidx.core.app.CoreComponentFactory
 androidx.core.app.RemoteActionCompat
+com.google.android.gms.common.api.internal.BasePendingResult
+com.google.android.gms.common.api.internal.LifecycleCallback
+androidx.lifecycle.LiveData$LifecycleBoundObserver
+app.vercel.form_builder_sigma_five.twa.DelegationService
+com.google.android.gms.common.GooglePlayServicesIncorrectManifestValueException
+androidx.versionedparcelable.CustomVersionedParcelable
+androidx.browser.browseractions.BrowserActionsFallbackMenuView
+com.google.androidbrowserhelper.trusted.FocusActivity
+org.chromium.support_lib_boundary.IsomorphicObjectBoundaryInterface
+com.google.android.gms.common.api.Scope
+org.chromium.support_lib_boundary.WebResourceErrorBoundaryInterface
+org.chromium.support_lib_boundary.VisualStateCallbackBoundaryInterface
+com.google.android.gms.auth.api.signin.GoogleSignInAccount
+org.chromium.support_lib_boundary.StaticsBoundaryInterface
+org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterface
+org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface
+com.google.android.gms.location.LocationAvailability
+androidx.versionedparcelable.ParcelImpl
+org.chromium.support_lib_boundary.ProxyControllerBoundaryInterface
+com.google.android.gms.common.api.GoogleApiActivity
+org.chromium.support_lib_boundary.ServiceWorkerControllerBoundaryInterface
+android.support.v4.app.RemoteActionCompatParcelizer
+org.chromium.support_lib_boundary.WebViewRendererBoundaryInterface
+com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity
+androidx.lifecycle.FullLifecycleObserverAdapter
+com.google.androidbrowserhelper.trusted.WebViewFallbackActivity
+org.chromium.support_lib_boundary.ScriptReferenceBoundaryInterface
+com.google.android.gms.common.annotation.KeepName
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface$ForceDarkBehavior
 androidx.lifecycle.ReflectiveGenericLifecycleObserver
 androidx.lifecycle.SingleGeneratedAdapterObserver
-com.google.android.gms.common.util.DynamiteApi
-com.google.android.gms.common.api.Status
-com.google.android.gms.common.GooglePlayServicesMissingManifestValueException
-androidx.core.app.RemoteActionCompatParcelizer
-android.support.v4.app.RemoteActionCompatParcelizer
-com.google.android.gms.common.annotation.KeepName
-com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity
-com.google.android.gms.common.api.internal.BasePendingResult
-androidx.annotation.Keep
-androidx.browser.browseractions.BrowserActionsFallbackMenuView
-com.google.android.gms.common.GooglePlayServicesIncorrectManifestValueException
-androidx.core.app.CoreComponentFactory
-com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader
-com.google.android.gms.location.LocationRequest
-com.google.android.gms.common.api.internal.LifecycleCallback
-com.google.android.gms.location.LocationResult
-androidx.versionedparcelable.CustomVersionedParcelable
-com.google.android.gms.common.api.Scope
-app.vercel.form_builder_sigma_five.twa.Application
-androidx.core.content.FileProvider
-com.google.android.gms.auth.api.signin.GoogleSignInAccount
 com.google.androidbrowserhelper.locationdelegation.PermissionRequestActivity
-com.google.android.gms.common.internal.ReflectedParcelable
-androidx.core.graphics.drawable.IconCompatParcelizer
-app.vercel.form_builder_sigma_five.twa.LauncherActivity
-app.vercel.form_builder_sigma_five.twa.DelegationService
-androidx.lifecycle.LiveData$LifecycleBoundObserver
-androidx.versionedparcelable.ParcelImpl
-com.google.android.gms.common.GooglePlayServicesManifestException
-androidx.core.graphics.drawable.IconCompat
+org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface
+org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface
 android.support.v4.graphics.drawable.IconCompatParcelizer
-com.google.android.gms.location.LocationAvailability
-com.google.androidbrowserhelper.trusted.FocusActivity
-com.google.androidbrowserhelper.trusted.WebViewFallbackActivity
-com.google.android.gms.common.api.GoogleApiActivity
-androidx.lifecycle.CompositeGeneratedAdaptersObserver
-com.google.android.gms.common.internal.MethodInvocation: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.location.LocationResult: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.common.internal.ConnectionTelemetryConfiguration: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.signin.internal.zaa: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.location.LocationRequest: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.signin.internal.zak: android.os.Parcelable$Creator CREATOR
+org.chromium.support_lib_boundary.WebResourceRequestBoundaryInterface
+org.chromium.support_lib_boundary.TracingControllerBoundaryInterface
+org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface
+com.google.android.gms.common.api.Status
+org.chromium.support_lib_boundary.FeatureFlagHolderBoundaryInterface
+com.google.android.gms.common.GooglePlayServicesManifestException
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface
+org.chromium.support_lib_boundary.JsReplyProxyBoundaryInterface
+androidx.core.graphics.drawable.IconCompat
+androidx.annotation.Keep
+com.google.android.gms.common.internal.ReflectedParcelable
+androidx.core.content.FileProvider
+com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity
+androidx.core.graphics.drawable.IconCompatParcelizer
+com.google.android.gms.common.api.Status: android.os.Parcelable$Creator CREATOR
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface$ForceDarkBehavior: int PREFER_MEDIA_QUERY_OVER_FORCE_DARK
+com.google.android.gms.internal.location.zzdb: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.location.zzdd: android.os.Parcelable$Creator CREATOR
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface$ForceDarkBehavior: int MEDIA_QUERY_ONLY
 com.google.android.gms.common.api.Scope: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.common.internal.MethodInvocation: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.signin.internal.zai: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.location.LocationRequest: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.location.LastLocationRequest: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.common.internal.ClientIdentity: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.common.internal.TelemetryData: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.location.LocationAvailability: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.common.internal.zzj: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.internal.location.zzg: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.common.internal.RootTelemetryConfiguration: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.location.LocationResult: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.common.Feature: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.internal.location.zzd: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader: java.lang.ClassLoader sClassLoader
+androidx.versionedparcelable.ParcelImpl: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.common.ConnectionResult: android.os.Parcelable$Creator CREATOR
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface$ForceDarkBehavior: int FORCE_DARK_ONLY
+com.google.android.gms.signin.internal.zaa: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.signin.internal.zag: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.signin.internal.zak: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.common.internal.ClientIdentity: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.location.zzac: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.common.internal.zat: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.internal.location.zzdf: android.os.Parcelable$Creator CREATOR
-androidx.versionedparcelable.ParcelImpl: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.common.internal.zav: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.internal.location.zzg: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.common.internal.GetServiceRequest: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.common.Feature: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.common.internal.RootTelemetryConfiguration: android.os.Parcelable$Creator CREATOR
+com.google.android.gms.common.internal.ConnectionTelemetryConfiguration: android.os.Parcelable$Creator CREATOR
 com.google.android.gms.auth.api.signin.GoogleSignInAccount: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.internal.location.zzdd: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.internal.location.zzdb: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader: java.lang.ClassLoader sClassLoader
-com.google.android.gms.common.ConnectionResult: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.common.api.Status: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.location.LocationAvailability: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.signin.internal.zai: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.location.zzac: android.os.Parcelable$Creator CREATOR
-com.google.android.gms.common.internal.zzj: android.os.Parcelable$Creator CREATOR
-com.google.androidbrowserhelper.trusted.FocusActivity: FocusActivity()
-androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State valueOf(java.lang.String)
-androidx.core.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
-com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity: ManageDataLauncherActivity()
-androidx.core.app.RemoteActionCompat: RemoteActionCompat()
-android.support.v4.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
-androidx.core.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
-androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State[] values()
-com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity: NotificationPermissionRequestActivity()
-android.support.v4.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
-android.support.v4.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
-androidx.core.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
-com.google.androidbrowserhelper.locationdelegation.PermissionRequestActivity: PermissionRequestActivity()
-com.google.androidbrowserhelper.trusted.WebViewFallbackActivity: WebViewFallbackActivity()
-com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader: DynamiteModule$DynamiteLoaderClassLoader()
-com.google.android.gms.common.api.GoogleApiActivity: GoogleApiActivity()
-androidx.browser.browseractions.BrowserActionsFallbackMenuView: BrowserActionsFallbackMenuView(android.content.Context,android.util.AttributeSet)
 androidx.core.content.FileProvider: FileProvider()
-app.vercel.form_builder_sigma_five.twa.Application: Application()
-com.google.android.gms.common.api.internal.zzb: zzb()
-android.support.v4.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
-app.vercel.form_builder_sigma_five.twa.DelegationService: DelegationService()
-androidx.core.graphics.drawable.IconCompat: IconCompat()
-androidx.versionedparcelable.CustomVersionedParcelable: CustomVersionedParcelable()
-androidx.core.app.CoreComponentFactory: CoreComponentFactory()
-android.support.v4.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
-android.support.v4.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
-androidx.core.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
-com.google.android.gms.common.ErrorDialogFragment: ErrorDialogFragment()
-androidx.core.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
-app.vercel.form_builder_sigma_five.twa.LauncherActivity: LauncherActivity()
+androidx.core.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+org.chromium.support_lib_boundary.StaticsBoundaryInterface: void initSafeBrowsing(android.content.Context,android.webkit.ValueCallback)
 androidx.core.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
-com.google.android.gms.common.GooglePlayServicesMissingManifestValueException: GooglePlayServicesMissingManifestValueException()
+org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface: void setWebViewRendererClient(java.lang.reflect.InvocationHandler)
+org.chromium.support_lib_boundary.IsomorphicObjectBoundaryInterface: java.lang.Object getOrCreatePeer(java.util.concurrent.Callable)
+org.chromium.support_lib_boundary.SafeBrowsingResponseBoundaryInterface: void backToSafety(boolean)
+org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterface: java.lang.reflect.InvocationHandler convertWebResourceError(java.lang.Object)
+org.chromium.support_lib_boundary.SafeBrowsingResponseBoundaryInterface: void proceed(boolean)
+org.chromium.support_lib_boundary.TracingControllerBoundaryInterface: boolean stop(java.io.OutputStream,java.util.concurrent.Executor)
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface: void setOffscreenPreRaster(boolean)
+org.chromium.support_lib_boundary.ScriptReferenceBoundaryInterface: void remove()
+com.google.android.gms.common.api.GoogleApiActivity: GoogleApiActivity()
+org.chromium.support_lib_boundary.TracingControllerBoundaryInterface: void start(int,java.util.Collection,int)
+org.chromium.support_lib_boundary.StaticsBoundaryInterface: android.net.Uri getSafeBrowsingPrivacyPolicyUrl()
+org.chromium.support_lib_boundary.WebMessageBoundaryInterface: java.lang.String getData()
+org.chromium.support_lib_boundary.ServiceWorkerWebSettingsBoundaryInterface: void setAllowContentAccess(boolean)
+org.chromium.support_lib_boundary.ServiceWorkerControllerBoundaryInterface: void setServiceWorkerClient(java.lang.reflect.InvocationHandler)
+org.chromium.support_lib_boundary.ServiceWorkerControllerBoundaryInterface: java.lang.reflect.InvocationHandler getServiceWorkerWebSettings()
+com.google.android.gms.common.ErrorDialogFragment: ErrorDialogFragment()
+org.chromium.support_lib_boundary.ServiceWorkerWebSettingsBoundaryInterface: boolean getAllowFileAccess()
+org.chromium.support_lib_boundary.WebMessageBoundaryInterface: java.lang.reflect.InvocationHandler[] getPorts()
+org.chromium.support_lib_boundary.WebMessagePortBoundaryInterface: void setWebMessageCallback(java.lang.reflect.InvocationHandler,android.os.Handler)
+org.chromium.support_lib_boundary.WebViewClientBoundaryInterface: void onPageCommitVisible(android.webkit.WebView,java.lang.String)
+android.support.v4.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.core.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+org.chromium.support_lib_boundary.WebResourceErrorBoundaryInterface: java.lang.CharSequence getDescription()
+org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterface: java.lang.reflect.InvocationHandler convertWebMessagePort(java.lang.Object)
+org.chromium.support_lib_boundary.ServiceWorkerWebSettingsBoundaryInterface: void setCacheMode(int)
+org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface: void postMessageToMainFrame(java.lang.reflect.InvocationHandler,android.net.Uri)
+com.google.androidbrowserhelper.trusted.WebViewFallbackActivity: WebViewFallbackActivity()
+app.vercel.form_builder_sigma_five.twa.Application: Application()
+org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterface: java.lang.reflect.InvocationHandler convertWebResourceRequest(android.webkit.WebResourceRequest)
+androidx.core.app.CoreComponentFactory: CoreComponentFactory()
+org.chromium.support_lib_boundary.JsReplyProxyBoundaryInterface: void postMessage(java.lang.String)
+app.vercel.form_builder_sigma_five.twa.DelegationService: DelegationService()
+com.google.androidbrowserhelper.locationdelegation.PermissionRequestActivity: PermissionRequestActivity()
+org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface: java.lang.reflect.InvocationHandler addDocumentStartJavaScript(java.lang.String,java.lang.String[])
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State valueOf(java.lang.String)
+org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface: void removeWebMessageListener(java.lang.String)
+org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterface: java.lang.Object convertWebMessagePort(java.lang.reflect.InvocationHandler)
 com.google.android.gms.common.api.internal.LifecycleCallback: com.google.android.gms.common.api.internal.LifecycleFragment getChimeraLifecycleFragmentImpl(com.google.android.gms.common.api.internal.LifecycleActivity)
+org.chromium.support_lib_boundary.WebViewClientBoundaryInterface: boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest)
+org.chromium.support_lib_boundary.WebViewClientBoundaryInterface: void onReceivedHttpError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceResponse)
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface: boolean getSafeBrowsingEnabled()
+android.support.v4.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+org.chromium.support_lib_boundary.TracingControllerBoundaryInterface: boolean isTracing()
+org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface: void addWebMessageListener(java.lang.String,java.lang.String[],java.lang.reflect.InvocationHandler)
+com.google.android.gms.common.api.internal.zzb: zzb()
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State[] values()
+com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity: ManageDataLauncherActivity()
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface: boolean getOffscreenPreRaster()
+org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterface: java.lang.Object convertWebResourceError(java.lang.reflect.InvocationHandler)
+androidx.core.graphics.drawable.IconCompat: IconCompat()
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface: void setForceDark(int)
+org.chromium.support_lib_boundary.WebMessagePortBoundaryInterface: void setWebMessageCallback(java.lang.reflect.InvocationHandler)
+android.support.v4.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.core.app.RemoteActionCompat: RemoteActionCompat()
+org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface: java.lang.reflect.InvocationHandler createWebView(android.webkit.WebView)
+org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface: java.lang.reflect.InvocationHandler getProxyController()
+org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface: java.lang.reflect.InvocationHandler[] createWebMessageChannel()
+org.chromium.support_lib_boundary.WebResourceErrorBoundaryInterface: int getErrorCode()
+org.chromium.support_lib_boundary.ServiceWorkerWebSettingsBoundaryInterface: boolean getBlockNetworkLoads()
+org.chromium.support_lib_boundary.FeatureFlagHolderBoundaryInterface: java.lang.String[] getSupportedFeatures()
+org.chromium.support_lib_boundary.SafeBrowsingResponseBoundaryInterface: void showInterstitial(boolean)
+app.vercel.form_builder_sigma_five.twa.LauncherActivity: LauncherActivity()
+org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterface: java.lang.Object convertServiceWorkerSettings(java.lang.reflect.InvocationHandler)
+org.chromium.support_lib_boundary.StaticsBoundaryInterface: void setSafeBrowsingAllowlist(java.util.Set,android.webkit.ValueCallback)
+org.chromium.support_lib_boundary.ServiceWorkerWebSettingsBoundaryInterface: void setBlockNetworkLoads(boolean)
+org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface: void setSupportLibraryVersion(java.lang.String)
+org.chromium.support_lib_boundary.ServiceWorkerClientBoundaryInterface: android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebResourceRequest)
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface: int getDisabledActionModeMenuItems()
+org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterface: java.lang.Object convertSafeBrowsingResponse(java.lang.reflect.InvocationHandler)
+android.support.v4.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+org.chromium.support_lib_boundary.WebResourceRequestBoundaryInterface: boolean isRedirect()
+org.chromium.support_lib_boundary.StaticsBoundaryInterface: void setSafeBrowsingWhitelist(java.util.List,android.webkit.ValueCallback)
+org.chromium.support_lib_boundary.WebViewClientBoundaryInterface: void onSafeBrowsingHit(android.webkit.WebView,android.webkit.WebResourceRequest,int,java.lang.reflect.InvocationHandler)
+androidx.browser.browseractions.BrowserActionsFallbackMenuView: BrowserActionsFallbackMenuView(android.content.Context,android.util.AttributeSet)
+org.chromium.support_lib_boundary.ServiceWorkerWebSettingsBoundaryInterface: boolean getAllowContentAccess()
+org.chromium.support_lib_boundary.VisualStateCallbackBoundaryInterface: void onComplete(long)
+org.chromium.support_lib_boundary.WebMessageCallbackBoundaryInterface: void onMessage(java.lang.reflect.InvocationHandler,java.lang.reflect.InvocationHandler)
+org.chromium.support_lib_boundary.ServiceWorkerWebSettingsBoundaryInterface: void setAllowFileAccess(boolean)
+com.google.android.gms.common.GooglePlayServicesMissingManifestValueException: GooglePlayServicesMissingManifestValueException()
+org.chromium.support_lib_boundary.ServiceWorkerWebSettingsBoundaryInterface: int getCacheMode()
+org.chromium.support_lib_boundary.WebMessagePortBoundaryInterface: void postMessage(java.lang.reflect.InvocationHandler)
+androidx.core.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface: void setForceDarkBehavior(int)
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface: void setSafeBrowsingEnabled(boolean)
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface: void setWillSuppressErrorPage(boolean)
+org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface: android.webkit.WebChromeClient getWebChromeClient()
+com.google.androidbrowserhelper.trusted.FocusActivity: FocusActivity()
+org.chromium.support_lib_boundary.StaticsBoundaryInterface: boolean isMultiProcessEnabled()
+org.chromium.support_lib_boundary.WebViewClientBoundaryInterface: void onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,java.lang.reflect.InvocationHandler)
+android.support.v4.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface: java.lang.String[] getSupportedFeatures()
+androidx.core.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterface: java.lang.reflect.InvocationHandler convertServiceWorkerSettings(java.lang.Object)
+androidx.core.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface: int getForceDarkBehavior()
+org.chromium.support_lib_boundary.ProxyControllerBoundaryInterface: void clearProxyOverride(java.lang.Runnable,java.util.concurrent.Executor)
+org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface: java.lang.reflect.InvocationHandler getWebViewRendererClient()
+androidx.versionedparcelable.CustomVersionedParcelable: CustomVersionedParcelable()
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface: int getForceDark()
+org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterface: java.lang.reflect.InvocationHandler convertSafeBrowsingResponse(java.lang.Object)
+com.google.androidbrowserhelper.trusted.NotificationPermissionRequestActivity: NotificationPermissionRequestActivity()
+org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface: java.lang.reflect.InvocationHandler getServiceWorkerController()
+android.support.v4.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterface: java.lang.reflect.InvocationHandler convertSettings(android.webkit.WebSettings)
+org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface: void onRendererResponsive(android.webkit.WebView,java.lang.reflect.InvocationHandler)
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface: boolean getWillSuppressErrorPage()
+org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface: java.lang.reflect.InvocationHandler getWebViewRenderer()
+org.chromium.support_lib_boundary.WebViewRendererBoundaryInterface: boolean terminate()
+com.google.android.gms.dynamite.DynamiteModule$DynamiteLoaderClassLoader: DynamiteModule$DynamiteLoaderClassLoader()
+org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface: void onPostMessage(android.webkit.WebView,java.lang.reflect.InvocationHandler,android.net.Uri,boolean,java.lang.reflect.InvocationHandler)
+org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface: void onRendererUnresponsive(android.webkit.WebView,java.lang.reflect.InvocationHandler)
+org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface: android.webkit.WebViewClient getWebViewClient()
+org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface: java.lang.reflect.InvocationHandler getTracingController()
+org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface: void insertVisualStateCallback(long,java.lang.reflect.InvocationHandler)
+org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface: java.lang.reflect.InvocationHandler getStatics()
+org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface: java.lang.reflect.InvocationHandler getWebkitToCompatConverter()
+org.chromium.support_lib_boundary.WebMessagePortBoundaryInterface: void close()
+org.chromium.support_lib_boundary.WebSettingsBoundaryInterface: void setDisabledActionModeMenuItems(int)
+org.chromium.support_lib_boundary.ProxyControllerBoundaryInterface: void setProxyOverride(java.lang.String[][],java.lang.String[],java.lang.Runnable,java.util.concurrent.Executor)
